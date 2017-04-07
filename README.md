@@ -4,15 +4,15 @@
 ## Usage
 
 ```js
-Constructor(HTMLElement, [options])
+// Constructor(HTMLElement, [options])
 
 var myElement = document.getElementById('app');
-var littleTouch = new Touch(myElement);
+var miniTouch = new Touch(myElement);
 ```
 
 ## Tap
 ```js
-littleTouch.on('tap', function(e) {
+miniTouch.on('tap', function(e) {
 	console.log(e);
 })
 ```
@@ -20,7 +20,7 @@ littleTouch.on('tap', function(e) {
 ## Swipe
 
 ```js
-littleTouch.on('swipe', function(e) {
+miniTouch.on('swipe', function(e) {
 	console.log(e);
 })
 ```
@@ -28,7 +28,8 @@ littleTouch.on('swipe', function(e) {
 ## Pan
 
 ```js
-littleTouch.on('pan', function(e) {
+// @todo
+miniTouch.on('pan', function(e) {
 	console.log(e);
 })
 ```

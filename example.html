@@ -22,11 +22,9 @@
 </div>
 <script type="text/javascript" src="touch.js"></script>
 <script type="text/javascript">
-	var miniTouch = new Touch('#app', {});
+	var miniTouch = new Touch('#app');
 	console.log(miniTouch);
-	// miniTouch.on('click', function() {
-	// 	console.log('ad001');
-	// })
+	
 	miniTouch.on('swipe', function() {
 		console.log('自定义的 swipe 被触发了。');
 	});

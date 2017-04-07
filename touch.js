@@ -74,6 +74,7 @@
 
 
 	function Touch(el, option) {
+		option = option || {};
 		this.element = typeof el === 'string' ? document.querySelector(el) : el;
 		this.now = null;
 		this.x1 = this.y1 = this.x2 = this.y2 = null;
