@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="applicable-device" content="mobile">
+	<title>Touch Example</title>
+	<style type="text/css">
+		#app {
+			width: 1000px;
+			height: 2000px;
+			background: #ffdd00;
+		}
+	</style>
+</head>
+<body>
+<div id="app">
+	
+</div>
+<script type="text/javascript" src="touch.js"></script>
+<script type="text/javascript">
+	var miniTouch = new Touch('#app', {});
+	console.log(miniTouch);
+	// miniTouch.on('click', function() {
+	// 	console.log('ad001');
+	// })
+	miniTouch.on('swipe', function() {
+		console.log('自定义的 swipe 被触发了。');
+	});
+
+	miniTouch.on('tap', function() {
+		console.log('自定义的 tap 被触发了。');
+	})
+</script>
+</body>
+</html>
